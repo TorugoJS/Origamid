@@ -1,26 +1,34 @@
 .grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
-.foto {
-  grid-column: span 3;
+/* Começa na linha 1 até a 3 (2 colunas)*/
+.titulo {
+  grid-column: 2;
+  text-align: right;
+}
+
+.preco {
+  place-self: start end;
 }
 
 .descricao {
-  grid-column: 1/-1;
+  text-align: right;
 }
 
 .comprar {
-  grid-column: 1/-1;
+  align-self: start;
 }
 
 /* Estilos Gerais */
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
   margin: 40px;
 }
+
 h1,
 p {
   margin: 0px;
@@ -31,8 +39,7 @@ h1 {
   line-height: 1;
 }
 
-p,
-span {
+p {
   font-size: 20px;
 }
 
@@ -43,10 +50,11 @@ img {
 
 .comprar {
   background: #a8f;
-  padding: 10px 20px;
   color: #103;
+  padding: 10px 20px;
   text-decoration: none;
   border-radius: 4px;
+  text-align: center;
   font-size: 20px;
 }
 
