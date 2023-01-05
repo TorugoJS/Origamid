@@ -1,65 +1,21 @@
-.grid {
-  display: grid;
+.flex {
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  grid-template-columns: 1fr 1fr;
 }
-
-/* Começa na linha 1 até a 3 (2 colunas)*/
-.titulo {
-  grid-column: 2;
-  text-align: right;
-}
-
-.preco {
-  place-self: start end;
-}
-
-.descricao {
-  text-align: right;
-}
-
-.comprar {
-  align-self: start;
-}
-
-/* Estilos Gerais */
-
 body {
-  font-family: Arial;
-  margin: 40px;
+  margin: 0;
 }
 
-h1,
-p {
+h2 {
+  background: #e7e7e7;
+  border: 1px solid #d7d7d7;
+  padding: 20px;
   margin: 0px;
 }
 
-h1 {
-  font-size: 48px;
-  line-height: 1;
-}
-
-p {
-  font-size: 20px;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 4px;
-}
-
-.comprar {
-  background: #a8f;
-  color: #103;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 4px;
-  text-align: center;
-  font-size: 20px;
-}
-
-.preco {
-  background: #ddd;
-  padding: 5px 10px;
-  border-radius: 4px;
+.grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
 }
