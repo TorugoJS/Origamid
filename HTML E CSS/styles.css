@@ -1,3 +1,21 @@
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.foto {
+  grid-column: span 3;
+}
+
+.descricao {
+  grid-column: 1/-1;
+}
+
+.comprar {
+  grid-column: 1/-1;
+}
+
 /* Estilos Gerais */
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -36,8 +54,4 @@ img {
   background: #ddd;
   padding: 5px 10px;
   border-radius: 4px;
-}
-
-.grid {
-  display: grid;
 }
