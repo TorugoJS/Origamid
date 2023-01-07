@@ -1,15 +1,24 @@
-ul {
-  list-style: none;
+body {
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 30px;
+  height: 100vh;
 }
 
-a {
-  text-decoration: none;
-  background: #eee;
-  padding: 10px 20px;
-  display: block;
-  color: #000;
+.bicicleta {
+  width: 500px;
+  height: 300px;
+  background-color: aquamarine;
+
+  background-image: url("./img/bicicleta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: url("./img/bicicleta.jpg") no-repeat cover; */
+  background-position: center top;
+  display: flex;
+}
+
+h1 {
+  margin: auto;
+  background-color: #fff;
+  padding: 1rem 2rem;
 }
