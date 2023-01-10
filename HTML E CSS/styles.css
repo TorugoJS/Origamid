@@ -7,6 +7,12 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.texto {
+  align-self: center;
 }
 
 .cover img {
@@ -16,5 +22,6 @@ img {
 }
 
 p {
-  font-size: 1.5rem;
+  /* font-size: 0.25rem; */
+  max-width: 60ch;
 }
