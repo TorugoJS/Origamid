@@ -33,7 +33,7 @@ p {
 
 .menu {
   display: flex;
-  gap: 2.2rem;
+  gap: 2.4rem;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -41,21 +41,32 @@ p {
 .menu a {
   background-color: #fff;
   text-transform: uppercase;
-  padding: 1rem 1.9rem;
+  padding: 1rem 2rem;
   border-radius: 0.4rem;
   color: #000;
-  transition: 0.1s ease-in-out;
 }
 
 .menu a:hover {
-  border: 2px solid #900;
-  font-size: 1.2rem;
+  border: 0.2rem solid #900;
 }
 
 .conteudo {
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr;
   max-width: 63rem;
+}
+
+.conteudo::before {
+  position: absolute;
+  content: "";
+  width: 4.1rem;
+  left: 29.5rem;
+  top: 2rem;
+  background-color: #e21;
+  height: 0.4rem;
+  z-index: 1;
+  margin: 0 auto;
 }
 
 .introducao {
@@ -86,8 +97,13 @@ p {
   text-transform: uppercase;
 }
 
+.btn:hover {
+  background-color: #900;
+}
+
 .subtitulo {
   font-size: 4rem;
+  background-image: url("./img/onda.svg");
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
   text-align: right;
@@ -101,7 +117,7 @@ p {
 }
 
 .vantagens-item:hover {
-  border-left: 4px solid #900;
+  border-left: 0.4rem solid #900;
 }
 
 .vantagens-item {
