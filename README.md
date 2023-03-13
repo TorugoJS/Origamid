@@ -1,2 +1,2 @@
-## Origamid
+# Origamid
 Curso da Origamid
